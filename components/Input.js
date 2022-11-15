@@ -3,6 +3,7 @@ export default function Input(props) {
     <>
       {props.rows === "1" && (
         <input
+          id={props.id}
           type={props.type}
           name={props.name}
           className={
@@ -14,6 +15,7 @@ export default function Input(props) {
       )}
       {props.rows !== "1" && (
         <textarea
+          id={props.id}
           type={props.type}
           name={props.name}
           className={

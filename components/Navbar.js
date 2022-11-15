@@ -3,7 +3,6 @@ import Link from "next/link";
 
 export default function Navbar(props) {
   const router = useRouter();
-  console.log(router);
 
   const elements = ["Home", "About", "Contact"];
 
@@ -17,7 +16,6 @@ export default function Navbar(props) {
       return "border-transparent";
     }
   };
-  console.log(setActive(elements[0]));
   return (
     <div className="p-5 font-normal">
       <ul className="my-auto mx-auto  md:mr-0 w-fit text-lg flex">
