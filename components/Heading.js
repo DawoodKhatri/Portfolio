@@ -2,7 +2,7 @@ export default function Heading(props) {
   return (
     <p
       className={
-        "text-2xl sm:text-4xl md:text-6xl font-bold my-5 " + props.className
+        "text-xl sm:text-3xl md:text-5xl font-bold my-5 " + props.className
       }
     >
       {props.text}

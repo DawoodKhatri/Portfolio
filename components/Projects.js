@@ -12,7 +12,7 @@ export default function Projects() {
           </>
         }
       />
-      <div className="inline-grid grid-cols-1 md:grid-cols-3 gap-10 w-fit mx-5 justify-center">
+      <div className="inline-grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16 w-fit mx-10 md:mx-16 lg:mx-24 mb-10 justify-center">
         <ProjectCard
           src="/images/DFlix.jpg"
           title="DFlix"

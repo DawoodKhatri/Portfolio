@@ -4,10 +4,10 @@ import Link from "next/link";
 
 export default function ProjectCard(props) {
   return (
-    <div className="rounded-xl overflow-hidden w-1/1 md:w-4/5 m-auto border-2 border-light transition ease-in-out duration-150 hover:scale-105 hover:cursor-pointer">
+    <div className="rounded-xl overflow-hidden flex flex-col h-full m-auto border-2 border-light transition ease-in-out duration-150 hover:scale-105 hover:cursor-pointer">
       <img className="border-b-2" src={props.src} />
-      <Title className="text-primary m-2" text={props.title} />
-      <Paragraph className="p-2 m-0 md:text-base" text={props.description} />
+      <Title className="text-primary mt-3 mb-0" text={props.title} />
+      <Paragraph className="m-3 mt-0 flex-1 lg:text-xl" text={props.description} />
       <div className="flex">
         <Link
           className="flex-1 px-3 py-1 text-light bg-primary border-light border-t-2 border-r transition-colors duration-150 hover:bg-secondary"

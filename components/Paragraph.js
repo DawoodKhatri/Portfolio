@@ -1,3 +1,3 @@
 export default function Paragraph(props) {
-  return <p className={"text-base sm:text-xl md:text-2xl py-1 "+props.className}>{props.text}</p>;
+  return <p className={props.className+" text-md sm:text-lg md:text-xl py-1"}>{props.text}</p>;
 }
