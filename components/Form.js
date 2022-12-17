@@ -13,7 +13,7 @@ export default function Form() {
     const subject = document.getElementById("subject").value;
     const message = document.getElementById("message").value;
     const query = `?name=${name}&email=${email}&subject=${subject}&message=${message}`;
-    fetch("/api/SendMail/" + query).then((res) => {
+    fetch("/SendMail/" + query).then((res) => {
       res.json().then((data) => {
         if (data.result === "success") {
           setAlert("Message Sent Successfully!");

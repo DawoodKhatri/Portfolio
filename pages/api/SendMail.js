@@ -1,5 +1,4 @@
 const nodemailer = require("nodemailer");
-const color = require("tailwindcss/colors").green[500];
 
 const getTemplate = (name,email,subject,message) => {
   return `
@@ -12,7 +11,7 @@ const getTemplate = (name,email,subject,message) => {
 `;
 };
 
-export default function sendMail(req, res) {
+export default function SendMail(req, res) {
 
   const from = req.query.name ? req.query.name : "";
   const email = req.query.email ? req.query.email : "";
