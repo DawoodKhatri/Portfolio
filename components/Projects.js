@@ -17,21 +17,21 @@ export default function Projects() {
           src="/images/DFlix.jpg"
           title="DFlix"
           description="It is a Movie Info Website, Developed with ReactJS and TMDB API."
-          github="https://github.com/DawoodKhatri"
+          github="https://github.com/DawoodKhatri/DFlix"
           live="https://dflix.onrender.com"
         />
         <ProjectCard
           src="/images/SABI.jpg"
           title="SABI"
           description="It is a Restaurant Management Website, Developed with MERN Stack."
-          github="https://github.com/DawoodKhatri"
+          github="https://github.com/DawoodKhatri/SABI"
           live="https://sabi.onrender.com"
         />
         <ProjectCard
           src="/images/SIH.jpg"
           title="Speech to Text"
           description="It is a Realtime Speech to Text Conversion Website, Developed with Python."
-          github="https://github.com/DawoodKhatri"
+          github="https://github.com/DawoodKhatri/SIH-D-CODERS"
           live="https://sih-d-coders.onrender.com"
         />
       </div>
