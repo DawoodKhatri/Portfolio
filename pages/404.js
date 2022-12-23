@@ -4,9 +4,9 @@ import Paragraph from "../components/Paragraph";
 import { useEffect } from "react";
 
 export default function notfound() {
-  useEffect(() => {
+  if (typeof window !== "undefined") {
     window.location.href = window.location.href.toLowerCase();
-  });
+  }
   return (
     <>
       <Jumbo className="text-primary" text="404" />
