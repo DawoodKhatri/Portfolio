@@ -15,7 +15,7 @@ export default function Form() {
     const query = `?name=${name}&email=${email}&subject=${subject}&message=${message}`;
     fetch("/api/SendMail/" + query).then((res) => {
       res.json().then((data) => {
-        if (data.result === "success") {
+        if (data.success) {
           setAlert("Message Sent Successfully!");
         } else {
           setAlert("Message not Sent");
