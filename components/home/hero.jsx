@@ -5,14 +5,14 @@ import HeroTagLines from "./heroTaglines";
 
 const Hero = () => {
   return (
-    <div className="w-full min-h-[calc(100vh-80px)] flex justify-center items-center">
-      <div className="flex-[3] p-20">
-        <p className="font-semibold text-2xl">Hello, It&apos;s Me</p>
-        <p className="font-bold text-6xl my-1">Dawood Khatri</p>
-        <p className="font-semibold text-3xl">
+    <div className="w-full min-h-[calc(100vh-80px)] p-10 md:p-20 gap-10 flex flex-col-reverse md:flex-row justify-center items-center">
+      <div className="md:flex-[3]">
+        <p className="font-semibold text-lg lg:text-xl xl:text-2xl">Hello, It&apos;s Me</p>
+        <p className="font-bold text-4xl lg:text-5xl xl:text-6xl my-1">Dawood Khatri</p>
+        <p className="font-semibold text-xl lg:text-2xl xl:text-3xl">
           <HeroTagLines />
         </p>
-        <p className="text-lg my-2">
+        <p className="text-sm lg:text-base xl:text-lg my-2">
           I bring a creative approach to seamlessly blend front-end and back-end
           technologies. Let&apos;s connect and explore the possibilities of creating
           innovative digital experiences together.
@@ -23,29 +23,29 @@ const Hero = () => {
             target="_blank"
             className="hero-links"
           >
-            <FaWhatsapp className="text-3xl text-white" />
+            <FaWhatsapp className="text-xl lg:text-2xl xl:text-3xl text-white" />
           </Link>
           <Link
             href="https://linkedin.com/in/DawoodKhatri"
             target="_blank"
             className="hero-links"
           >
-            <FaLinkedin className="text-3xl text-white" />
+            <FaLinkedin className="text-xl lg:text-2xl xl:text-3xl text-white" />
           </Link>
           <Link
             href="https://github.com/DawoodKhatri"
             target="_blank"
             className="hero-links"
           >
-            <FaGithub className="text-3xl text-white" />
+            <FaGithub className="text-xl lg:text-2xl xl:text-3xl text-white" />
           </Link>
         </div>
         <Link href="/contact">
           <button className="hero-button">Lets Connect</button>
         </Link>
       </div>
-      <div className="flex-[2] p-20">
-        <div className="glass h-[480px] !rounded-full overflow-hidden">
+      <div className="md:flex-[2]">
+        <div className="glass w-2/3 m-auto md:w-full aspect-square !rounded-full overflow-hidden">
           <img className="mt-5 w-full h-full object-cover" src="picture.png" />
         </div>
       </div>
