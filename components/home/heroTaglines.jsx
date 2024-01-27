@@ -10,9 +10,9 @@ const HeroTagLines = () => {
         <Typewriter
           words={[
             "Full Stact Web Developer",
-            "Tech Enthusiast",
-            "Passionate Coder",
-            "Web Development Enthusiast",
+            "Flutter Developer",
+            "Freelancer",
+            "Student",
           ]}
           loop
           cursor
