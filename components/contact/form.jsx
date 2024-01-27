@@ -51,7 +51,7 @@ const ContactForm = () => {
         <input placeholder="Subject" name="subject" />
         <textarea placeholder="Your message" name="message" rows={3} />
         <button
-          className="px-4 py-2 bg-primary rounded-lg text-lg font-semibold hover:bg-opacity-75 transition-all ease-in-out duration-300"
+          className="px-4 py-2 bg-primary rounded-lg xl:text-lg font-semibold hover:bg-opacity-75 transition-all ease-in-out duration-300"
           type="submit"
         >
           Send Message
