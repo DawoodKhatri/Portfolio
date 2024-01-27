@@ -19,7 +19,7 @@ body {
 }
 
 .glass {
-  @apply bg-white bg-opacity-10 rounded-lg border border-primary border-opacity-30 backdrop-filter backdrop-blur-sm;
+  @apply !bg-white bg-opacity-10 rounded-lg border border-primary border-opacity-30 backdrop-filter backdrop-blur-sm;
 }
 
 .hero-links {
@@ -28,4 +28,50 @@ body {
 
 .hero-button {
   @apply bg-primary px-5 py-2 lg:py-3 rounded-full font-semibold xl:text-lg shadow-md shadow-primary-dark hover:scale-105 transition-all ease-in-out duration-300;
+}
+
+.vertical-timeline::before {
+  @apply !left-6 sm:!left-8;
+}
+
+.timeline-element > div {
+  @apply glass shadow shadow-primary ml-16 sm:ml-24;
+}
+
+.timeline-element > div > div {
+  @apply !border-r-primary;
+}
+
+.timeline-element-highlight {
+  @apply timeline-element;
+}
+
+.timeline-element-highlight > div {
+  @apply !bg-primary;
+}
+
+.vertical-timeline-element-icon {
+  @apply !w-12 !h-12 sm:!w-16 sm:!h-16;
+}
+
+.vertical-timeline-element-icon > img {
+  @apply p-2 w-full h-full object-contain;
+}
+
+@media only screen and (min-width: 1170px) {
+  .experience-heading {
+    @apply mx-auto text-center;
+  }
+
+  .vertical-timeline::before {
+    @apply !left-[50%];
+  }
+
+  .timeline-element > div > span {
+    @apply !px-4;
+  }
+
+  .vertical-timeline-element-icon {
+    @apply !w-20 !h-20 !-ml-10;
+  }
 }
