@@ -4,7 +4,7 @@ import React from "react";
 
 const ExperiencePage = () => {
   return (
-    <div className="flex flex-col gap-10 p-10 md:p-20">
+    <div className="flex flex-col gap-10 py-10 md:py-20">
       <ExperienceHeading />
       <ExperienceJourney />
     </div>

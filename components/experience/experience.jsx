@@ -11,16 +11,18 @@ import { FaStar } from "react-icons/fa";
 
 const ExperienceJourney = () => {
   return (
-    <VerticalTimeline animate={false}>
-      {EXPERIENCES.map((experience, i) => (
-        <TimelineElement key={i} {...experience} />
-      ))}
-      <VerticalTimelineElement
-        iconClassName="bg-primary"
-        icon={<FaStar />}
-        visible
-      />
-    </VerticalTimeline>
+    <div className="pl-3 pr-5 sm:px-10 md:px-20">
+      <VerticalTimeline animate={false}>
+        {EXPERIENCES.map((experience, i) => (
+          <TimelineElement key={i} {...experience} />
+        ))}
+        <VerticalTimelineElement
+          iconClassName="bg-primary"
+          icon={<FaStar />}
+          visible
+        />
+      </VerticalTimeline>
+    </div>
   );
 };
 
