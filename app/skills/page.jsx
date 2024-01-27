@@ -5,7 +5,7 @@ import React from "react";
 
 const SkillsPage = () => {
   return (
-    <div className="flex flex-col gap-10 lg:gap-20 p-10 lg:p-20">
+    <div className="min-h-[calc(100vh-80px)] flex flex-col justify-center items-center gap-10 lg:gap-20 p-10 lg:p-20">
       <div className="flex flex-col md:flex-row justify-center items-center gap-10">
         <div className="flex-[1]">
           <SkillHeading />
