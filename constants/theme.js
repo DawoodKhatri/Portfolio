@@ -1,3 +1,3 @@
 import colors from "tailwindcss/colors";
 
-export const APP_COLOR = colors.purple;
+export const APP_COLOR = colors.yellow;

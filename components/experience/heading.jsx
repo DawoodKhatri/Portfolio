@@ -4,7 +4,7 @@ const ExperienceHeading = () => {
   return (
     <div className="max-w-4xl experience-heading px-10 md:px-20">
       <p className="font-bold text-4xl lg:text-5xl xl:text-6xl my-1">
-        <span className="text-primary">My Experience</span>
+      My <span className="text-primary">Experience</span>
       </p>
 
       <p className="font-semibold text-xl lg:text-2xl xl:text-3xl my-2">

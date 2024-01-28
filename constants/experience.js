@@ -2,7 +2,7 @@ export const EXPERIENCES = [
   {
     duration: "December 2023 - January 2024",
     iconClassName: "bg-primary p-[2px]",
-    icon: "zentech.png",
+    icon: "/experience/zentech.png",
     organization: "ZenTech Systems",
     role: "Full Stack Web Developer",
     type: "Freelancing",
@@ -16,7 +16,7 @@ export const EXPERIENCES = [
   {
     duration: "August 2023 - Present",
     iconClassName: "bg-white",
-    icon: "acm.png",
+    icon: "/experience/acm.png",
     organization: "MHSSCOE ACM",
     role: "Webmaster (Web Team Lead)",
     type: "Leadership",
@@ -30,7 +30,7 @@ export const EXPERIENCES = [
   {
     duration: "January - June 2023",
     iconClassName: "bg-white",
-    icon: "cognitio.png",
+    icon: "/experience/cognitio.png",
     organization: "Cognitio Knowledge Tech Private Limited",
     role: "Frontend Web Developer",
     type: "Internship",
@@ -44,7 +44,7 @@ export const EXPERIENCES = [
   {
     duration: "January 2021 - June 2024",
     iconClassName: "bg-primary",
-    icon: "mhssce.png",
+    icon: "/experience/mhssce.png",
     organization: "M. H. Saboo Siddik College of Engineering",
     role: "B. E. - Information Technology",
     type: "Education",
