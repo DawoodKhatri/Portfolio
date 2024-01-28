@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 
-const {} = require("tailwindcss/colors");
+const { APP_COLOR } = require("./constants/theme");
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -11,7 +12,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: { DEFAULT: "#22c55e", light: "#bbf7d0", dark: "#064e3b" },
+        primary: {
+          DEFAULT: APP_COLOR[500],
+          light: APP_COLOR[200],
+          dark: APP_COLOR[900],
+        },
       },
     },
   },

@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
+import { useFrame } from "@react-three/fiber";
 import { useTexture } from "@react-three/drei";
 import {
   animateRain,
@@ -10,6 +10,7 @@ import {
   getRandomFlash,
   setCameraConfig,
 } from "@/utils/weather";
+import { APP_COLOR } from "@/constants/theme";
 
 function Rain() {
   const rainRef = useRef();
@@ -58,7 +59,7 @@ function Flash() {
 
   return (
     <pointLight
-      color={0x22c55e}
+      color={parseInt(APP_COLOR[500].slice(1), 16)}
       intensity={10}
       distance={500}
       decay={1.7}

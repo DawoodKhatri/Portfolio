@@ -6,7 +6,7 @@ import React from "react";
 const SkillsPage = () => {
   return (
     <div className="min-h-[calc(100vh-80px)] flex flex-col justify-center items-center gap-10 lg:gap-20 p-10 lg:p-20">
-      <div className="flex flex-col md:flex-row justify-center items-center gap-10">
+      <div className="w-full flex flex-col md:flex-row justify-center items-center gap-10">
         <div className="flex-[1]">
           <SkillHeading />
         </div>
@@ -14,7 +14,7 @@ const SkillsPage = () => {
           <SkillSection title="Web" skills={SKILLS.FRONTEND} />
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-center items-center gap-10 [&>div]:flex-[1]">
+      <div className="w-full flex flex-col md:flex-row justify-evenly gap-10">
         <SkillSection title="Database" skills={SKILLS.DATABASE} />
         <SkillSection title="Mobile" skills={SKILLS.MOBILE} />
         <SkillSection title="Additional" skills={SKILLS.ADDITIONAL} />
