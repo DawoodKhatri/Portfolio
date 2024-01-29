@@ -4,7 +4,7 @@ import React from "react";
 
 const ContactPage = () => {
   return (
-    <div className="min-h-[calc(100vh-80px)] flex flex-col justify-center items-center gap-10 p-10 md:p-20">
+    <div className="min-h-[calc(100vh-102px)] flex flex-col justify-center items-center gap-8 p-8 md:p-16">
       <ContactHeading />
       <ContactForm />
     </div>

@@ -2,7 +2,7 @@ import React from "react";
 
 const ExperienceHeading = () => {
   return (
-    <div className="max-w-4xl experience-heading px-10 md:px-20">
+    <div className="experience-heading px-8 sm:px-10 md:px-20 lg:px-16">
       <p className="font-bold text-4xl lg:text-5xl xl:text-6xl my-1">
       My <span className="text-primary">Experience</span>
       </p>

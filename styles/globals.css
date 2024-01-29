@@ -69,7 +69,7 @@ textarea {
 
 @media only screen and (min-width: 1170px) {
   .experience-heading {
-    @apply mx-auto text-center;
+    @apply max-w-4xl mx-auto text-center;
   }
 
   .vertical-timeline::before {

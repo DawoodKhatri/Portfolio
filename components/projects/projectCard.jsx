@@ -2,7 +2,7 @@ import React from "react";
 
 const ProjectCard = ({ thumbnail, title, description, demo }) => {
   return (
-    <div className="glass overflow-hidden">
+    <div className="glass shadow shadow-primary overflow-hidden">
       <img className="rounded-lg" src={thumbnail} />
 
       <div className="px-3 py-5">

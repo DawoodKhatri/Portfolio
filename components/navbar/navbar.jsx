@@ -8,15 +8,9 @@ import React from "react";
 const Navbar = () => {
   const pathname = usePathname();
   return (
-    <nav className="bg-glass flex justify-between items-center py-3 px-20">
-      <h3 className="text-4xl font-semibold">
-        <div className="glass h-[56px] !rounded-full overflow-hidden">
-          <img className="mt-1 w-full h-full object-cover" src="picture.png" />
-        </div>
-        {/* {NAVBAR_ITEMS.find(({ href }) => pathname === href).title} */}
-      </h3>
-      <div className="flex gap-5 text-lg font-semibold">
-        {NAVBAR_ITEMS.map(({ label, href }, index) => (
+    <nav className="w-full py-5 px-5 sm:px-20 sticky top-0 z-10">
+      <div className="glass shadow-md shadow-primary w-fit m-auto flex gap-5 sm:gap-8 text-lg font-semibold px-8 py-4">
+        {NAVBAR_ITEMS.map(({ icon, label, href }, index) => (
           <Link
             key={index}
             href={href}
@@ -24,7 +18,9 @@ const Navbar = () => {
               href === pathname ? "text-primary " : ""
             }hover:underline underline-offset-2 decoration-primary transition-all ease-in-out duration-300`}
           >
-            {label}
+            <button className="flex items-center gap-2">
+              {icon} <span className="hidden md:block"> {label}</span>
+            </button>
           </Link>
         ))}
       </div>

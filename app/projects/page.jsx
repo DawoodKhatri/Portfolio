@@ -5,9 +5,9 @@ import React from "react";
 
 const ProjectsPage = () => {
   return (
-    <div className="min-h-[calc(100vh-80px)] flex flex-col justify-center items-center gap-10 py-10 md:py-20">
+    <div className="min-h-[calc(100vh-102px)] flex flex-col justify-center items-center gap-8 py-8 md:py-16">
       <ProjectsHeading />
-      <div className="px-10 md:px-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-10 lg:gap-20">
+      <div className="px-8 md:px-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center gap-8 lg:gap-16">
         {PROJECTS.map((project, i) => (
           <ProjectCard key={i} {...project} />
         ))}

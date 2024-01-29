@@ -5,9 +5,9 @@ import React from "react";
 
 const SkillsPage = () => {
   return (
-    <div className="min-h-[calc(100vh-80px)] flex flex-col justify-center items-center gap-10 lg:gap-20 p-10 lg:p-20">
-      <div className="w-full flex flex-col md:flex-row justify-center items-center gap-10">
-        <div className="flex-[1]">
+    <div className="min-h-[calc(100vh-102px)] flex flex-col justify-center items-center gap-8 md:gap-16 p-8 md:p-16">
+      <div className="w-full flex flex-col md:flex-row justify-center items-center gap-8">
+        <div className="flex-[1] text-center md:text-start">
           <SkillHeading />
         </div>
         <div className="flex-[1]">

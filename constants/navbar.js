@@ -1,7 +1,23 @@
+import {
+  FaBriefcase,
+  FaCogs,
+  FaEnvelope,
+  FaFolderOpen,
+  FaUser,
+} from "react-icons/fa";
+
 export const NAVBAR_ITEMS = [
-  { label: "About", title: "About Me", href: "/" },
-  { label: "Skills", title: "My Skills", href: "/skills" },
-  { label: "Experience", title: "My Experience", href: "/experience" },
-  { label: "Projects", title: "My Projects", href: "/projects" },
-  { label: "Contact", title: "Lets Talk", href: "/contact" },
+  { icon: <FaUser />, label: "About", href: "/" },
+  { icon: <FaCogs />, label: "Skills", href: "/skills" },
+  {
+    icon: <FaBriefcase />,
+    label: "Experience",
+    href: "/experience",
+  },
+  {
+    icon: <FaFolderOpen />,
+    label: "Projects",
+    href: "/projects",
+  },
+  { icon: <FaEnvelope />, label: "Contact", href: "/contact" },
 ];

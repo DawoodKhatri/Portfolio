@@ -5,7 +5,7 @@ import HeroTagLines from "./heroTaglines";
 
 const Hero = () => {
   return (
-    <div className="w-full min-h-[calc(100vh-80px)] p-10 md:p-20 gap-10 flex flex-col-reverse md:flex-row justify-center items-center">
+    <div className="w-full min-h-[calc(100vh-102px)] p-8 md:p-16 gap-8 flex flex-col-reverse md:flex-row justify-center items-center">
       <div className="md:flex-[3]">
         <p className="font-semibold text-lg lg:text-xl xl:text-2xl">Hello, It&apos;s Me</p>
         <p className="font-bold text-4xl lg:text-5xl xl:text-6xl my-1">Dawood Khatri</p>
@@ -45,7 +45,7 @@ const Hero = () => {
         </Link>
       </div>
       <div className="md:flex-[2]">
-        <div className="glass w-2/3 m-auto md:w-full aspect-square !rounded-full overflow-hidden">
+        <div className="glass w-2/3 m-auto md:w-full aspect-square !rounded-full shadow shadow-primary overflow-hidden">
           <img className="mt-5 w-full h-full object-cover" src="picture.png" />
         </div>
       </div>
