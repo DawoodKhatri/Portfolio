@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
       <body className={`${inter.className}`}>
         <AppBackground />
         <Navbar />
-        <main className="pt-[100px]">{children}</main>
+        <main className="max-w-screen-2xl mx-auto pt-[100px]">{children}</main>
         <Toaster />
       </body>
     </html>

@@ -45,7 +45,7 @@ const Hero = () => {
         </Link>
       </div>
       <div className="md:flex-[2] animate__animated animate__zoomIn">
-        <div className="glass w-2/3 m-auto md:w-full aspect-square !rounded-full shadow shadow-primary overflow-hidden">
+        <div className="glass w-2/3 m-auto md:w-auto lg:max-h-[calc(100vh-200px)] aspect-square !rounded-full shadow shadow-primary overflow-hidden">
           <img className="mt-5 w-full h-full object-cover" src="picture.png" />
         </div>
       </div>
