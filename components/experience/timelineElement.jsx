@@ -1,5 +1,6 @@
 import React from "react";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
+import SkillList from "../common/skillList";
 
 const TimelineElement = ({
   duration,
@@ -29,17 +30,7 @@ const TimelineElement = ({
         <p className="!my-1 w-fit px-3 py-1 rounded-full bg-primary">{type}</p>
       </div>
 
-      {skills && (
-        <div className="my-3 flex items-center gap-2 flex-wrap">
-          {skills.map((icon,i) => (
-            <img
-            key={i}
-              className="w-8 h-8"
-              src={`https://skillicons.dev/icons?i=${icon}`}
-            />
-          ))}
-        </div>
-      )}
+      {skills && <SkillList skills={skills} />}
 
       <ul className="list-disc ml-5 mt-5">
         {descriptions.map((description, i) => (

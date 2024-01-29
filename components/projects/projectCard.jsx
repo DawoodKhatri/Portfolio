@@ -1,16 +1,32 @@
 import React from "react";
+import SkillList from "../common/skillList";
+import Link from "next/link";
 
-const ProjectCard = ({ thumbnail, title, description, demo }) => {
+const ProjectCard = ({
+  thumbnail,
+  imagesPath,
+  title,
+  description,
+  skills,
+  demo,
+}) => {
   return (
-    <div className="glass shadow shadow-primary overflow-hidden">
-      <img className="rounded-lg" src={thumbnail} />
+    <Link href={`/projects/${encodeURI(title)}`}>
+      <div className="glass shadow shadow-primary overflow-hidden hover:scale-[102%] transition-all ease-in-out duration-300">
+        <img
+          className="rounded-lg"
+          src={`/projects/${imagesPath}/${thumbnail}.png`}
+        />
 
-      <div className="px-3 py-5">
-        <h3 className="font-semibold text-xl text-primary">{title}</h3>
-        <h4 className="text-ellipsis line-clamp-2" title={description}>{description}</h4>
-        {/* <button className="w-fit mt-2 project-button">More Details</button> */}
+        <div className="px-3 py-5">
+          <h3 className="font-semibold text-xl text-primary">{title}</h3>
+          <p className="text-ellipsis line-clamp-2" title={description}>
+            {description}
+          </p>
+          {skills && <SkillList skills={skills} />}
+        </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
