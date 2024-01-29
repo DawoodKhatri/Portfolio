@@ -12,7 +12,7 @@ const ProjectCard = ({
 }) => {
   return (
     <Link href={`/projects/${encodeURI(title)}`}>
-      <div className="glass shadow shadow-primary overflow-hidden hover:scale-[102%] transition-all ease-in-out duration-300">
+      <div className="glass shadow shadow-primary overflow-hidden hover:scale-[102%] transition-all ease-in-out duration-300 animate__animated animate__fadeInUp">
         <img
           className="rounded-lg"
           src={`/projects/${imagesPath}/${thumbnail}.png`}

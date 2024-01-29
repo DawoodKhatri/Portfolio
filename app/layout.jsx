@@ -3,6 +3,7 @@ import "@/styles/globals.css";
 import AppBackground from "@/components/background/background";
 import Navbar from "@/components/navbar/navbar";
 import { Toaster } from "react-hot-toast";
+import 'animate.css';
 
 const inter = Inter({ subsets: ["latin"] });
 

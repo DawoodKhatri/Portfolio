@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactHeading = () => {
   return (
-    <div className="text-center max-w-4xl">
+    <div className="text-center max-w-4xl animate__animated animate__fadeInDown">
       <p className="font-bold text-4xl lg:text-5xl xl:text-6xl my-1">
         Let&apos;s <span className="text-primary">Connect</span>
       </p>

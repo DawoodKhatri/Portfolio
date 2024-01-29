@@ -13,16 +13,18 @@ const ProjectDetailsPage = ({ params: { projectTitle } }) => {
   return (
     <div className="min-h-[calc(100vh-102px)] h-full flex flex-col md:flex-row justify-center items-center gap-8 p-8 md:p-16">
       <div className="flex-[1]">
-        <ProjectDetails {...{ title, description, skills, demo }} />
+       <div className="animate__animated animate__fadeInLeft">
+       <ProjectDetails {...{ title, description, skills, demo }} />
+       </div>
 
-        <div className="hidden md:block mt-5">
+        <div className="hidden md:block mt-5 animate__animated animate__fadeInUp">
           <ProjectDescription descriptions={details} />
         </div>
       </div>
-      <div className="flex-[1]">
+      <div className="flex-[1] animate__animated animate__zoomIn">
         <ProjectImageCarousel path={imagesPath} count={imagesCount} />
       </div>
-      <div className="md:hidden flex-[1]">
+      <div className="md:hidden flex-[1] animate__animated animate__fadeInUp">
         <ProjectDescription descriptions={details} />
       </div>
     </div>

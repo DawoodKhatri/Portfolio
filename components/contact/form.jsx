@@ -41,7 +41,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="max-w-2xl w-full glass p-8">
+    <div className="max-w-2xl w-full glass p-8 animate__animated animate__fadeInUp">
       <form
         className="flex flex-col justify-center items-center gap-5"
         onSubmit={sendMail}

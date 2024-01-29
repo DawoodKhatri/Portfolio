@@ -14,7 +14,7 @@ const TimelineElement = ({
 }) => {
   return (
     <VerticalTimelineElement
-      className="timeline-element"
+      className="timeline-element  animate__animated animate__fadeInUp"
       date={duration}
       iconClassName={iconClassName}
       icon={<img src={icon} />}
