@@ -3,6 +3,12 @@ import SkillSection from "@/components/skills/skillSection";
 import { SKILLS } from "@/constants/skills";
 import React from "react";
 
+
+export const metadata = {
+  title: "Tech I Work With",
+  description: "Explore the tools driving my digital creations.",
+};
+
 const SkillsPage = () => {
   return (
     <div className="min-h-[calc(100vh-102px)] flex flex-col justify-center items-center gap-8 md:gap-16 p-8 md:p-16">

@@ -3,6 +3,11 @@ import ProjectCard from "@/components/projects/projectCard";
 import { PROJECTS } from "@/constants/projects";
 import React from "react";
 
+export const metadata = {
+  title: "My Projects",
+  description: "Discover My Creative Work.",
+};
+
 const ProjectsPage = () => {
   return (
     <div className="min-h-[calc(100vh-102px)] flex flex-col justify-center items-center gap-8 py-8 md:py-16">

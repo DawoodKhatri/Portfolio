@@ -2,12 +2,12 @@
 import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import { FaAngleLeft, FaAngleRight, FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 const ProjectImageCarousel = ({ path, count }) => {
   return (
     <Carousel
-    className="rounded-lg overflow-hidden"
+      className="rounded-lg overflow-hidden"
       interval={2000}
       autoPlay
       infiniteLoop
@@ -21,7 +21,7 @@ const ProjectImageCarousel = ({ path, count }) => {
             className="absolute top-[calc(50%-25px)] left-4 z-[2] glass text-primary px-1 py-2 rounded-lg"
             onClick={onClick}
           >
-            <FaAngleLeft className="text-3xl"/>
+            <FaAngleLeft className="text-3xl" />
           </button>
         )
       }
@@ -31,7 +31,7 @@ const ProjectImageCarousel = ({ path, count }) => {
             className="absolute top-[calc(50%-25px)] right-4 z-[2] glass text-primary px-1 py-2 rounded-lg"
             onClick={onClick}
           >
-            <FaAngleRight className="text-3xl"/>
+            <FaAngleRight className="text-3xl" />
           </button>
         )
       }
@@ -40,7 +40,10 @@ const ProjectImageCarousel = ({ path, count }) => {
         .fill(null)
         .map((_, index) => (
           <div key={index}>
-            <img className="aspect-video object-cover" src={`/projects/${path}/${index + 1}.png`} />
+            <img
+              className="aspect-video object-cover"
+              src={`/projects/${path}/${index + 1}.png`}
+            />
           </div>
         ))}
     </Carousel>

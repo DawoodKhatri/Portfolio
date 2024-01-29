@@ -3,13 +3,14 @@ import "@/styles/globals.css";
 import AppBackground from "@/components/background/background";
 import Navbar from "@/components/navbar/navbar";
 import { Toaster } from "react-hot-toast";
-import 'animate.css';
+import "animate.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Dawood Khatri",
-  description: "Full Stack Web Developer",
+  description:
+    "As a Full Stack Web Developer, Flutter Developer, Freelancer, and Student, I bring a creative approach to seamlessly blend front-end and back-end technologies.",
 };
 
 export default function RootLayout({ children }) {
