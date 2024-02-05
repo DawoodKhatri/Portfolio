@@ -14,12 +14,12 @@ export const EXPERIENCES = [
     ],
   },
   {
-    duration: "August 2023 - Present",
+    duration: "October 2023 - Present",
     iconClassName: "bg-white",
     icon: "/experience/acm.png",
     organization: "MHSSCOE ACM",
     role: "Webmaster (Web Team Lead)",
-    type: "Leadership",
+    type: "Internship",
     skills: ["react", "nextjs", "nodejs", "mongodb", "git", "github"],
     descriptions: [
       "Led a 4-member team in developing a responsive web app for ACM.",
